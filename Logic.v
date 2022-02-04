@@ -946,10 +946,12 @@ Theorem All_In :
 Proof.
   intros.
   split.
-  - intros. induction l eqn:H1.
+  - intros. induction l.
     + reflexivity.
     + simpl in H. simpl. split.
-      {  } 
+      { apply H. left. reflexivity. }
+      { apply IHl. intros. apply H. right. apply H0. }
+  - 
   (* FILL IN HERE *) Admitted.
 (** [] *)
 
@@ -1372,12 +1374,15 @@ Qed.
 Lemma even_double_conv : forall n, exists k,
   n = if even n then double k else S (double k).
 Proof.
-  intros n. destruct (even n) eqn:H.
-  -
-
-
-  (* Hint: Use the [even_S] lemma from [Induction.v]. *)
-  (* FILL IN HERE *) Admitted. 
+  intros n. induction n.
+    + exists 0. reflexivity.
+    + destruct (even (S n)) eqn:H.
+      - rewrite even_S in H. destruct (even n) eqn:H1 in H.
+        { discriminate H. }
+        { rewrite H1 in IHn. destruct IHn. rewrite H0. exists (S x). reflexivity. }
+      - rewrite even_S in H. destruct (even n) eqn:H1 in H.
+        { rewrite H1 in IHn. destruct IHn. rewrite H0. exists x. reflexivity. }
+        { discriminate H. } Qed. 
 (** [] *)
 
 (** Now the main theorem: *)
@@ -1823,16 +1828,12 @@ Theorem excluded_middle_irrefutable: forall (P:Prop),
   ~ ~ (P \/ ~ P).
 Proof.
   unfold not. intros P H.
-  assert (H1 : forall Q, ~(Q /\ ~Q)). { intros. unfold not. intros.
-                          destruct H0. apply H1 in H0. apply H0.  }
-  unfold not in H1.
-  apply H1 with P. split.
-  -  
+  apply demorgans in H.
+  destruct H. apply H0 in H. apply H. Qed.
 
   
                         
   
-  (* FILL IN HERE *) Admitted.
 (** [] *)
 
 (** **** Exercise: 3 stars, advanced (not_exists_dist)

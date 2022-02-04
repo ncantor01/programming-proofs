@@ -971,7 +971,7 @@ Proof.
 Definition sillyfun1 (n : nat) : bool :=
   if n =? 3 then true
   else if n =? 5 then true
-  else false.
+  else false. Qed.
 
 (** Now suppose that we want to convince Coq that [sillyfun1 n]
     yields [true] only when [n] is odd.  If we start the proof like

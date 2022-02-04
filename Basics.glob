@@ -1,4 +1,4 @@
-DIGEST 3c70c60d6386eb22aff6b171c4ec0cae
+DIGEST af38104d78dc6709372e42831f4ae165
 FLF.Basics
 ind 3227:3229 <> day
 constr 3245:3250 <> monday
@@ -8,17 +8,11 @@ constr 3282:3289 <> thursday
 constr 3295:3300 <> friday
 constr 3306:3313 <> saturday
 constr 3319:3324 <> sunday
-R3251:3251 LF.Basics <> day ind
-R3263:3263 LF.Basics <> day ind
-R3277:3277 LF.Basics <> day ind
-R3290:3290 LF.Basics <> day ind
-R3301:3301 LF.Basics <> day ind
-R3314:3314 LF.Basics <> day ind
-R3325:3325 LF.Basics <> day ind
 def 3503:3514 <> next_weekday
 R3519:3521 LF.Basics <> day ind
+binder 3517:3517 <> d:3
 R3526:3528 LF.Basics <> day ind
-R3541:3541 LF.Basics <> d var
+R3541:3541 LF.Basics <> d:3 var
 R3552:3557 LF.Basics <> monday constr
 R3565:3571 LF.Basics <> tuesday constr
 R3577:3583 LF.Basics <> tuesday constr
@@ -49,34 +43,37 @@ R8733:8738 Coq.Strings.String <> <> lib
 ind 8959:8962 <> bool
 constr 8978:8981 <> true
 constr 8987:8991 <> false
-R8982:8982 LF.Basics <> bool ind
-R8992:8992 LF.Basics <> bool ind
 def 9083:9086 <> negb
 R9091:9094 LF.Basics <> bool ind
+binder 9089:9089 <> b:7
 R9099:9102 LF.Basics <> bool ind
-R9115:9115 LF.Basics <> b var
+R9115:9115 LF.Basics <> b:7 var
 R9126:9129 LF.Basics <> true constr
 R9134:9138 LF.Basics <> false constr
 R9144:9148 LF.Basics <> false constr
 R9153:9156 LF.Basics <> true constr
 def 9177:9180 <> andb
 R9186:9189 LF.Basics <> bool ind
+binder 9183:9184 <> b1:9
 R9196:9199 LF.Basics <> bool ind
+binder 9193:9194 <> b2:10
 R9204:9207 LF.Basics <> bool ind
-R9220:9221 LF.Basics <> b1 var
+R9220:9221 LF.Basics <> b1:9 var
 R9232:9235 LF.Basics <> true constr
-R9240:9241 LF.Basics <> b2 var
+R9240:9241 LF.Basics <> b2:10 var
 R9247:9251 LF.Basics <> false constr
 R9256:9260 LF.Basics <> false constr
 def 9281:9283 <> orb
 R9289:9292 LF.Basics <> bool ind
+binder 9286:9287 <> b1:12
 R9299:9302 LF.Basics <> bool ind
+binder 9296:9297 <> b2:13
 R9307:9310 LF.Basics <> bool ind
-R9323:9324 LF.Basics <> b1 var
+R9323:9324 LF.Basics <> b1:12 var
 R9335:9338 LF.Basics <> true constr
 R9343:9346 LF.Basics <> true constr
 R9352:9356 LF.Basics <> false constr
-R9361:9362 LF.Basics <> b2 var
+R9361:9362 LF.Basics <> b2:13 var
 def 10067:10075 <> test_orb1
 R10079:10079 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R10095:10098 Coq.Init.Logic <> ::type_scope:x_'='_x not
@@ -119,30 +116,37 @@ R10678:10681 LF.Basics <> true constr
 R10685:10688 LF.Basics <> true constr
 def 11219:11223 <> negb'
 R11228:11231 LF.Basics <> bool ind
+binder 11226:11226 <> b:15
 R11236:11239 LF.Basics <> bool ind
-R11249:11249 LF.Basics <> b var
+R11249:11249 LF.Basics <> b:15 var
 R11269:11272 LF.Basics <> true constr
 R11256:11260 LF.Basics <> false constr
 def 11287:11291 <> andb'
 R11297:11300 LF.Basics <> bool ind
+binder 11294:11295 <> b1:16
 R11307:11310 LF.Basics <> bool ind
+binder 11304:11305 <> b2:17
 R11315:11318 LF.Basics <> bool ind
-R11328:11329 LF.Basics <> b1 var
+R11328:11329 LF.Basics <> b1:16 var
 R11346:11350 LF.Basics <> false constr
-R11336:11337 LF.Basics <> b2 var
+R11336:11337 LF.Basics <> b2:17 var
 def 11365:11368 <> orb'
 R11374:11377 LF.Basics <> bool ind
+binder 11371:11372 <> b1:18
 R11384:11387 LF.Basics <> bool ind
+binder 11381:11382 <> b2:19
 R11392:11395 LF.Basics <> bool ind
-R11405:11406 LF.Basics <> b1 var
-R11425:11426 LF.Basics <> b2 var
+R11405:11406 LF.Basics <> b1:18 var
+R11425:11426 LF.Basics <> b2:19 var
 R11413:11416 LF.Basics <> true constr
 def 12599:12603 <> nandb
 R12609:12612 LF.Basics <> bool ind
+binder 12606:12607 <> b1:20
 R12619:12622 LF.Basics <> bool ind
+binder 12616:12617 <> b2:21
 R12627:12630 LF.Basics <> bool ind
-R12647:12648 LF.Basics <> b2 var
-R12643:12644 LF.Basics <> b1 var
+R12647:12648 LF.Basics <> b2:21 var
+R12643:12644 LF.Basics <> b1:20 var
 R12659:12662 LF.Basics <> true constr
 R12665:12668 LF.Basics <> true constr
 R12673:12677 LF.Basics <> false constr
@@ -177,12 +181,15 @@ R12987:12990 LF.Basics <> true constr
 R13000:13004 LF.Basics <> false constr
 def 13245:13249 <> andb3
 R13255:13258 LF.Basics <> bool ind
+binder 13252:13253 <> b1:24
 R13265:13268 LF.Basics <> bool ind
+binder 13262:13263 <> b2:25
 R13275:13278 LF.Basics <> bool ind
+binder 13272:13273 <> b3:26
 R13283:13286 LF.Basics <> bool ind
-R13307:13308 LF.Basics <> b3 var
-R13303:13304 LF.Basics <> b2 var
-R13299:13300 LF.Basics <> b1 var
+R13307:13308 LF.Basics <> b3:26 var
+R13303:13304 LF.Basics <> b2:25 var
+R13299:13300 LF.Basics <> b1:24 var
 R13319:13322 LF.Basics <> true constr
 R13325:13328 LF.Basics <> true constr
 R13331:13334 LF.Basics <> true constr
@@ -234,21 +241,17 @@ ind 15210:15212 <> rgb
 constr 15228:15230 <> red
 constr 15236:15240 <> green
 constr 15246:15249 <> blue
-R15231:15231 LF.Basics <> rgb ind
-R15241:15241 LF.Basics <> rgb ind
-R15250:15250 LF.Basics <> rgb ind
 ind 15263:15267 <> color
 constr 15283:15287 <> black
 constr 15293:15297 <> white
 constr 15303:15309 <> primary
-R15288:15288 LF.Basics <> color ind
-R15298:15298 LF.Basics <> color ind
 R15316:15318 LF.Basics <> rgb ind
-R15320:15320 LF.Basics <> color ind
+binder 15312:15312 <> p:34
 def 16750:16759 <> monochrome
 R16766:16770 LF.Basics <> color ind
+binder 16762:16762 <> c:35
 R16775:16778 LF.Basics <> bool ind
-R16791:16791 LF.Basics <> c var
+R16791:16791 LF.Basics <> c:35 var
 R16802:16806 LF.Basics <> black constr
 R16811:16814 LF.Basics <> true constr
 R16820:16824 LF.Basics <> white constr
@@ -257,8 +260,9 @@ R16838:16844 LF.Basics <> primary constr
 R16851:16855 LF.Basics <> false constr
 def 17109:17113 <> isred
 R17120:17124 LF.Basics <> color ind
+binder 17116:17116 <> c:37
 R17129:17132 LF.Basics <> bool ind
-R17145:17145 LF.Basics <> c var
+R17145:17145 LF.Basics <> c:37 var
 R17156:17160 LF.Basics <> black constr
 R17165:17169 LF.Basics <> false constr
 R17175:17179 LF.Basics <> white constr
@@ -284,12 +288,13 @@ mod 18307:18321 <> TuplePlayground
 ind 18735:18737 TuplePlayground bit
 constr 18753:18754 TuplePlayground B0
 constr 18760:18761 TuplePlayground B1
-R18755:18755 LF.Basics <> bit ind
-R18762:18762 LF.Basics <> bit ind
 ind 18775:18780 TuplePlayground nybble
 constr 18796:18799 TuplePlayground bits
 R18816:18818 LF.Basics TuplePlayground bit ind
-R18820:18820 LF.Basics <> nybble ind
+binder 18802:18803 <> b0:43
+binder 18805:18806 <> b1:44
+binder 18808:18809 <> b2:45
+binder 18811:18812 <> b3:46
 R18852:18857 LF.Basics TuplePlayground nybble ind
 R18830:18833 LF.Basics TuplePlayground bits constr
 R18844:18845 LF.Basics TuplePlayground B0 constr
@@ -298,8 +303,9 @@ R18838:18839 LF.Basics TuplePlayground B0 constr
 R18835:18836 LF.Basics TuplePlayground B1 constr
 def 19187:19194 TuplePlayground all_zero
 R19202:19207 LF.Basics TuplePlayground nybble ind
+binder 19197:19198 <> nb:47
 R19212:19215 LF.Basics <> bool ind
-R19228:19229 LF.Basics <> nb var
+R19228:19229 LF.Basics <> nb:47 var
 R19241:19244 LF.Basics TuplePlayground bits constr
 R19246:19247 LF.Basics TuplePlayground B0 constr
 R19249:19250 LF.Basics TuplePlayground B0 constr
@@ -325,19 +331,18 @@ mod 19774:19786 <> NatPlayground
 ind 21591:21593 NatPlayground nat
 constr 21609:21609 NatPlayground O
 constr 21615:21615 NatPlayground S
-R21610:21610 LF.Basics <> nat ind
-R21622:21624 LF.Basics <> nat ind
-R21626:21626 LF.Basics <> nat ind
+R21622:21624 LF.Basics <> nat:49 ind
+binder 21618:21618 <> n:51
 ind 23411:23414 NatPlayground nat'
 constr 23430:23433 NatPlayground stop
 constr 23439:23442 NatPlayground tick
-R23434:23434 LF.Basics <> nat' ind
-R23451:23454 LF.Basics <> nat' ind
-R23456:23456 LF.Basics <> nat' ind
+R23451:23454 LF.Basics <> nat':52 ind
+binder 23445:23447 <> foo:54
 def 23764:23767 NatPlayground pred
 R23774:23776 LF.Basics NatPlayground nat ind
+binder 23770:23770 <> n:55
 R23781:23783 LF.Basics NatPlayground nat ind
-R23796:23796 LF.Basics <> n var
+R23796:23796 LF.Basics <> n:55 var
 R23807:23807 LF.Basics NatPlayground O constr
 R23812:23812 LF.Basics NatPlayground O constr
 R23818:23818 LF.Basics NatPlayground S constr
@@ -349,8 +354,9 @@ R24435:24435 Coq.Init.Datatypes <> S constr
 R24437:24437 Coq.Init.Datatypes <> O constr
 def 24475:24482 <> minustwo
 R24489:24491 Coq.Init.Datatypes <> nat ind
+binder 24485:24485 <> n:57
 R24496:24498 Coq.Init.Datatypes <> nat ind
-R24511:24511 LF.Basics <> n var
+R24511:24511 LF.Basics <> n:57 var
 R24522:24522 Coq.Init.Datatypes <> O constr
 R24527:24527 Coq.Init.Datatypes <> O constr
 R24533:24533 Coq.Init.Datatypes <> S constr
@@ -373,8 +379,9 @@ R24796:24798 Coq.Init.Datatypes <> nat ind
 R24785:24792 LF.Basics <> minustwo def
 def 26046:26049 <> even
 R26054:26056 Coq.Init.Datatypes <> nat ind
+binder 26052:26052 <> n:59
 R26061:26064 LF.Basics <> bool ind
-R26077:26077 LF.Basics <> n var
+R26077:26077 LF.Basics <> n:59 var
 R26088:26088 Coq.Init.Datatypes <> O constr
 R26100:26103 LF.Basics <> true constr
 R26109:26109 Coq.Init.Datatypes <> S constr
@@ -382,13 +389,14 @@ R26111:26111 Coq.Init.Datatypes <> O constr
 R26121:26125 LF.Basics <> false constr
 R26131:26131 Coq.Init.Datatypes <> S constr
 R26134:26134 Coq.Init.Datatypes <> S constr
-R26143:26146 LF.Basics <> even def
+R26143:26146 LF.Basics <> even:60 def
 def 26268:26270 <> odd
 R26275:26277 Coq.Init.Datatypes <> nat ind
+binder 26273:26273 <> n:62
 R26282:26285 LF.Basics <> bool ind
 R26292:26295 LF.Basics <> negb def
 R26298:26301 LF.Basics <> even def
-R26303:26303 LF.Basics <> n var
+R26303:26303 LF.Basics <> n:62 var
 def 26316:26324 <> test_odd1
 R26335:26337 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R26330:26332 LF.Basics <> odd def
@@ -400,68 +408,77 @@ R26407:26411 LF.Basics <> false constr
 mod 26729:26742 <> NatPlayground2
 def 26755:26758 NatPlayground2 plus
 R26765:26767 Coq.Init.Datatypes <> nat ind
+binder 26761:26761 <> n:63
 R26775:26777 Coq.Init.Datatypes <> nat ind
+binder 26771:26771 <> m:64
 R26782:26784 Coq.Init.Datatypes <> nat ind
-R26797:26797 LF.Basics <> n var
+R26797:26797 LF.Basics <> n:63 var
 R26808:26808 Coq.Init.Datatypes <> O constr
-R26813:26813 LF.Basics <> m var
+R26813:26813 LF.Basics <> m:64 var
 R26819:26819 Coq.Init.Datatypes <> S constr
 R26827:26827 Coq.Init.Datatypes <> S constr
-R26830:26833 LF.Basics <> plus def
-R26838:26838 LF.Basics <> m var
+R26830:26833 LF.Basics <> plus:65 def
+R26838:26838 LF.Basics <> m:64 var
 R26921:26924 LF.Basics NatPlayground2 plus def
 def 27686:27689 NatPlayground2 mult
 R27698:27700 Coq.Init.Datatypes <> nat ind
+binder 27692:27692 <> n:67
+binder 27694:27694 <> m:68
 R27705:27707 Coq.Init.Datatypes <> nat ind
-R27720:27720 LF.Basics <> n var
+R27720:27720 LF.Basics <> n:67 var
 R27731:27731 Coq.Init.Datatypes <> O constr
 R27736:27736 Coq.Init.Datatypes <> O constr
 R27742:27742 Coq.Init.Datatypes <> S constr
 R27750:27753 LF.Basics NatPlayground2 plus def
-R27758:27761 LF.Basics <> mult def
-R27766:27766 LF.Basics <> m var
-R27755:27755 LF.Basics <> m var
+R27758:27761 LF.Basics <> mult:69 def
+R27766:27766 LF.Basics <> m:68 var
+R27755:27755 LF.Basics <> m:68 var
 def 27785:27794 NatPlayground2 test_mult1
 R27797:27797 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R27806:27809 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R27798:27801 LF.Basics NatPlayground2 mult def
 def 27939:27943 NatPlayground2 minus
 R27950:27952 Coq.Init.Datatypes <> nat ind
+binder 27946:27946 <> n:71
+binder 27948:27948 <> m:72
 R27957:27959 Coq.Init.Datatypes <> nat ind
-R27975:27975 LF.Basics <> m var
-R27972:27972 LF.Basics <> n var
+R27975:27975 LF.Basics <> m:72 var
+R27972:27972 LF.Basics <> n:71 var
 R27986:27986 Coq.Init.Datatypes <> O constr
 R28000:28000 Coq.Init.Datatypes <> O constr
 R28006:28006 Coq.Init.Datatypes <> S constr
 R28012:28012 Coq.Init.Datatypes <> O constr
-R28020:28020 LF.Basics <> n var
+R28020:28020 LF.Basics <> n:71 var
 R28026:28026 Coq.Init.Datatypes <> S constr
 R28032:28032 Coq.Init.Datatypes <> S constr
-R28040:28044 LF.Basics <> minus def
+R28040:28044 LF.Basics <> minus:73 def
 R28064:28077 LF.Basics NatPlayground2 <> mod
 def 28090:28092 <> exp
 R28108:28110 Coq.Init.Datatypes <> nat ind
+binder 28095:28098 <> base:76
+binder 28100:28104 <> power:77
 R28115:28117 Coq.Init.Datatypes <> nat ind
-R28130:28134 LF.Basics <> power var
+R28130:28134 LF.Basics <> power:77 var
 R28145:28145 Coq.Init.Datatypes <> O constr
 R28150:28150 Coq.Init.Datatypes <> S constr
 R28152:28152 Coq.Init.Datatypes <> O constr
 R28158:28158 Coq.Init.Datatypes <> S constr
 R28165:28168 Coq.Init.Peano <> mult syndef
-R28176:28178 LF.Basics <> exp def
-R28180:28183 LF.Basics <> base var
-R28170:28173 LF.Basics <> base var
+R28176:28178 LF.Basics <> exp:78 def
+R28180:28183 LF.Basics <> base:76 var
+R28170:28173 LF.Basics <> base:76 var
 def 28428:28436 <> factorial
 R28441:28443 Coq.Init.Datatypes <> nat ind
+binder 28439:28439 <> n:80
 R28448:28450 Coq.Init.Datatypes <> nat ind
-R28463:28463 LF.Basics <> n var
+R28463:28463 LF.Basics <> n:80 var
 R28474:28474 Coq.Init.Datatypes <> O constr
 R28486:28486 Coq.Init.Datatypes <> S constr
 R28496:28498 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
 R28493:28493 Coq.Init.Datatypes <> S constr
-R28495:28495 LF.Basics <> n var
-R28499:28507 LF.Basics <> factorial def
-R28509:28509 LF.Basics <> n var
+R28495:28495 LF.Basics <> n:80 var
+R28499:28507 LF.Basics <> factorial:81 def
+R28509:28509 LF.Basics <> n:80 var
 def 28528:28542 <> test_factorial1
 R28554:28554 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R28566:28569 Coq.Init.Logic <> ::type_scope:x_'='_x not
@@ -484,32 +501,36 @@ R29225:29228 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
 R29221:29223 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
 def 30150:30152 <> eqb
 R30161:30163 Coq.Init.Datatypes <> nat ind
+binder 30155:30155 <> n:83
+binder 30157:30157 <> m:84
 R30168:30171 LF.Basics <> bool ind
-R30184:30184 LF.Basics <> n var
+R30184:30184 LF.Basics <> n:83 var
 R30195:30195 Coq.Init.Datatypes <> O constr
-R30206:30206 LF.Basics <> m var
+R30206:30206 LF.Basics <> m:84 var
 R30224:30224 Coq.Init.Datatypes <> O constr
 R30229:30232 LF.Basics <> true constr
 R30245:30245 Coq.Init.Datatypes <> S constr
 R30253:30257 LF.Basics <> false constr
 R30276:30276 Coq.Init.Datatypes <> S constr
-R30290:30290 LF.Basics <> m var
+R30290:30290 LF.Basics <> m:84 var
 R30311:30311 Coq.Init.Datatypes <> O constr
 R30316:30320 LF.Basics <> false constr
 R30336:30336 Coq.Init.Datatypes <> S constr
-R30344:30346 LF.Basics <> eqb def
+R30344:30346 LF.Basics <> eqb:85 def
 def 30528:30530 <> leb
 R30539:30541 Coq.Init.Datatypes <> nat ind
+binder 30533:30533 <> n:89
+binder 30535:30535 <> m:90
 R30546:30549 LF.Basics <> bool ind
-R30562:30562 LF.Basics <> n var
+R30562:30562 LF.Basics <> n:89 var
 R30573:30573 Coq.Init.Datatypes <> O constr
 R30578:30581 LF.Basics <> true constr
 R30587:30587 Coq.Init.Datatypes <> S constr
-R30607:30607 LF.Basics <> m var
+R30607:30607 LF.Basics <> m:90 var
 R30622:30622 Coq.Init.Datatypes <> O constr
 R30627:30631 LF.Basics <> false constr
 R30641:30641 Coq.Init.Datatypes <> S constr
-R30649:30651 LF.Basics <> leb def
+R30649:30651 LF.Basics <> leb:91 def
 def 30685:30693 <> test_leb1
 R30718:30720 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R30711:30713 LF.Basics <> leb def
@@ -533,13 +554,15 @@ R31163:31167 LF.Basics <> ::nat_scope:x_'<=?'_x not
 R31173:31177 LF.Basics <> false constr
 def 31961:31963 <> ltb
 R31972:31974 Coq.Init.Datatypes <> nat ind
+binder 31966:31966 <> n:94
+binder 31968:31968 <> m:95
 R31979:31982 LF.Basics <> bool ind
 R32003:32005 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
-R32002:32002 LF.Basics <> m var
-R32006:32006 LF.Basics <> n var
+R32002:32002 LF.Basics <> m:95 var
+R32006:32006 LF.Basics <> n:94 var
 R31996:31998 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
-R31995:31995 LF.Basics <> n var
-R31999:31999 LF.Basics <> m var
+R31995:31995 LF.Basics <> n:94 var
+R31999:31999 LF.Basics <> m:95 var
 R32017:32017 Coq.Init.Datatypes <> O constr
 R32020:32020 Coq.Init.Datatypes <> O constr
 R32025:32029 LF.Basics <> false constr
@@ -565,76 +588,88 @@ R32301:32303 LF.Basics <> ltb def
 R32312:32316 LF.Basics <> false constr
 prf 33307:33314 <> plus_O_n
 R33329:33331 Coq.Init.Datatypes <> nat ind
+binder 33325:33325 <> n:96
 R33339:33341 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R33335:33337 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R33338:33338 LF.Basics <> n var
-R33342:33342 LF.Basics <> n var
+R33338:33338 LF.Basics <> n:96 var
+R33342:33342 LF.Basics <> n:96 var
 prf 34253:34261 <> plus_O_n'
 R34276:34278 Coq.Init.Datatypes <> nat ind
+binder 34272:34272 <> n:97
 R34286:34288 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R34282:34284 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R34285:34285 LF.Basics <> n var
-R34289:34289 LF.Basics <> n var
+R34285:34285 LF.Basics <> n:97 var
+R34289:34289 LF.Basics <> n:97 var
 prf 35996:36005 <> plus_O_n''
 R36020:36022 Coq.Init.Datatypes <> nat ind
+binder 36016:36016 <> n:98
 R36030:36032 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R36026:36028 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R36029:36029 LF.Basics <> n var
-R36033:36033 LF.Basics <> n var
+R36029:36029 LF.Basics <> n:98 var
+R36033:36033 LF.Basics <> n:98 var
 prf 36467:36474 <> plus_1_l
 R36487:36489 Coq.Init.Datatypes <> nat ind
+binder 36485:36485 <> n:99
 R36497:36499 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R36493:36495 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R36496:36496 LF.Basics <> n var
+R36496:36496 LF.Basics <> n:99 var
 R36500:36500 Coq.Init.Datatypes <> S constr
-R36502:36502 LF.Basics <> n var
+R36502:36502 LF.Basics <> n:99 var
 prf 36552:36559 <> mult_0_l
 R36572:36574 Coq.Init.Datatypes <> nat ind
+binder 36570:36570 <> n:100
 R36582:36584 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R36578:36580 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
-R36581:36581 LF.Basics <> n var
+R36581:36581 LF.Basics <> n:100 var
 prf 37174:37188 <> plus_id_example
 R37203:37205 Coq.Init.Datatypes <> nat ind
+binder 37199:37199 <> n:101
+binder 37201:37201 <> m:102
 R37215:37220 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R37226:37228 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R37222:37224 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R37221:37221 LF.Basics <> n var
-R37225:37225 LF.Basics <> n var
+R37221:37221 LF.Basics <> n:101 var
+R37225:37225 LF.Basics <> n:101 var
 R37230:37232 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R37229:37229 LF.Basics <> m var
-R37233:37233 LF.Basics <> m var
+R37229:37229 LF.Basics <> m:102 var
+R37233:37233 LF.Basics <> m:102 var
 R37211:37213 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R37210:37210 LF.Basics <> n var
-R37214:37214 LF.Basics <> m var
+R37210:37210 LF.Basics <> n:101 var
+R37214:37214 LF.Basics <> m:102 var
 prf 39337:39352 <> plus_id_exercise
 R39371:39373 Coq.Init.Datatypes <> nat ind
+binder 39363:39363 <> n:103
+binder 39365:39365 <> m:104
+binder 39367:39367 <> o:105
 R39383:39386 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R39392:39395 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R39401:39403 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R39397:39399 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R39396:39396 LF.Basics <> n var
-R39400:39400 LF.Basics <> m var
+R39396:39396 LF.Basics <> n:103 var
+R39400:39400 LF.Basics <> m:104 var
 R39405:39407 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R39404:39404 LF.Basics <> m var
-R39408:39408 LF.Basics <> o var
+R39404:39404 LF.Basics <> m:104 var
+R39408:39408 LF.Basics <> o:105 var
 R39388:39390 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R39387:39387 LF.Basics <> m var
-R39391:39391 LF.Basics <> o var
+R39387:39387 LF.Basics <> m:104 var
+R39391:39391 LF.Basics <> o:105 var
 R39379:39381 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R39378:39378 LF.Basics <> n var
-R39382:39382 LF.Basics <> m var
+R39378:39378 LF.Basics <> n:103 var
+R39382:39382 LF.Basics <> m:104 var
 R40475:40482 Coq.Init.Peano <> mult_n_O thm
 R40529:40537 Coq.Init.Peano <> mult_n_Sm thm
 prf 40900:40911 <> mult_n_0_m_0
 R40928:40930 Coq.Init.Datatypes <> nat ind
+binder 40922:40922 <> p:106
+binder 40924:40924 <> q:107
 R40952:40954 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R40935:40935 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
 R40941:40945 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
 R40951:40951 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
 R40937:40939 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
-R40936:40936 LF.Basics <> p var
+R40936:40936 LF.Basics <> p:106 var
 R40947:40949 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
-R40946:40946 LF.Basics <> q var
+R40946:40946 LF.Basics <> q:107 var
 R40992:40999 Coq.Init.Peano <> mult_n_O thm
 R40992:40999 Coq.Init.Peano <> mult_n_O thm
 R40992:40999 Coq.Init.Peano <> mult_n_O thm
@@ -643,10 +678,11 @@ R41015:41022 Coq.Init.Peano <> mult_n_O thm
 R41015:41022 Coq.Init.Peano <> mult_n_O thm
 prf 41242:41249 <> mult_n_1
 R41264:41266 Coq.Init.Datatypes <> nat ind
+binder 41260:41260 <> p:108
 R41276:41278 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R41272:41274 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
-R41271:41271 LF.Basics <> p var
-R41279:41279 LF.Basics <> p var
+R41271:41271 LF.Basics <> p:108 var
+R41279:41279 LF.Basics <> p:108 var
 R41310:41318 Coq.Init.Peano <> mult_n_Sm thm
 R41310:41318 Coq.Init.Peano <> mult_n_Sm thm
 R41310:41318 Coq.Init.Peano <> mult_n_Sm thm
@@ -655,89 +691,105 @@ R41332:41339 Coq.Init.Peano <> mult_n_O thm
 R41332:41339 Coq.Init.Peano <> mult_n_O thm
 prf 41868:41888 <> plus_1_neq_0_firsttry
 R41903:41905 Coq.Init.Datatypes <> nat ind
+binder 41899:41899 <> n:109
 R41922:41924 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R41910:41910 LF.Basics <> ::nat_scope:x_'=?'_x not
 R41916:41920 LF.Basics <> ::nat_scope:x_'=?'_x not
 R41912:41914 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R41911:41911 LF.Basics <> n var
+R41911:41911 LF.Basics <> n:109 var
 R41925:41929 LF.Basics <> false constr
 prf 42881:42892 <> plus_1_neq_0
 R42907:42909 Coq.Init.Datatypes <> nat ind
+binder 42903:42903 <> n:110
 R42926:42928 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R42914:42914 LF.Basics <> ::nat_scope:x_'=?'_x not
 R42920:42924 LF.Basics <> ::nat_scope:x_'=?'_x not
 R42916:42918 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R42915:42915 LF.Basics <> n var
+R42915:42915 LF.Basics <> n:110 var
 R42929:42933 LF.Basics <> false constr
 prf 46388:46402 <> negb_involutive
 R46417:46420 LF.Basics <> bool ind
+binder 46413:46413 <> b:111
 R46438:46440 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R46425:46428 LF.Basics <> negb def
 R46431:46434 LF.Basics <> negb def
-R46436:46436 LF.Basics <> b var
-R46441:46441 LF.Basics <> b var
+R46436:46436 LF.Basics <> b:111 var
+R46441:46441 LF.Basics <> b:111 var
 prf 47175:47190 <> andb_commutative
+binder 47201:47201 <> b:112
+binder 47203:47203 <> c:113
 R47214:47216 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R47206:47209 LF.Basics <> andb def
-R47213:47213 LF.Basics <> c var
-R47211:47211 LF.Basics <> b var
+R47213:47213 LF.Basics <> c:113 var
+R47211:47211 LF.Basics <> b:112 var
 R47217:47220 LF.Basics <> andb def
-R47224:47224 LF.Basics <> b var
-R47222:47222 LF.Basics <> c var
+R47224:47224 LF.Basics <> b:112 var
+R47222:47222 LF.Basics <> c:113 var
 prf 47747:47763 <> andb_commutative'
+binder 47774:47774 <> b:114
+binder 47776:47776 <> c:115
 R47787:47789 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R47779:47782 LF.Basics <> andb def
-R47786:47786 LF.Basics <> c var
-R47784:47784 LF.Basics <> b var
+R47786:47786 LF.Basics <> c:115 var
+R47784:47784 LF.Basics <> b:114 var
 R47790:47793 LF.Basics <> andb def
-R47797:47797 LF.Basics <> b var
-R47795:47795 LF.Basics <> c var
+R47797:47797 LF.Basics <> b:114 var
+R47795:47795 LF.Basics <> c:115 var
 prf 48338:48351 <> andb3_exchange
+binder 48364:48364 <> b:116
+binder 48366:48366 <> c:117
+binder 48368:48368 <> d:118
 R48388:48390 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R48371:48374 LF.Basics <> andb def
-R48387:48387 LF.Basics <> d var
+R48387:48387 LF.Basics <> d:118 var
 R48377:48380 LF.Basics <> andb def
-R48384:48384 LF.Basics <> c var
-R48382:48382 LF.Basics <> b var
+R48384:48384 LF.Basics <> c:117 var
+R48382:48382 LF.Basics <> b:116 var
 R48391:48394 LF.Basics <> andb def
-R48407:48407 LF.Basics <> c var
+R48407:48407 LF.Basics <> c:117 var
 R48397:48400 LF.Basics <> andb def
-R48404:48404 LF.Basics <> d var
-R48402:48402 LF.Basics <> b var
+R48404:48404 LF.Basics <> d:118 var
+R48402:48402 LF.Basics <> b:116 var
 prf 49045:49059 <> andb_true_elim2
 R49076:49079 LF.Basics <> bool ind
+binder 49070:49070 <> b:119
+binder 49072:49072 <> c:120
 R49099:49102 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R49104:49106 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R49103:49103 LF.Basics <> c var
+R49103:49103 LF.Basics <> c:120 var
 R49107:49110 LF.Basics <> true constr
 R49092:49094 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R49084:49087 LF.Basics <> andb def
-R49091:49091 LF.Basics <> c var
-R49089:49089 LF.Basics <> b var
+R49091:49091 LF.Basics <> c:120 var
+R49089:49089 LF.Basics <> b:119 var
 R49095:49098 LF.Basics <> true constr
 prf 50077:50089 <> plus_1_neq_0'
 R50104:50106 Coq.Init.Datatypes <> nat ind
+binder 50100:50100 <> n:121
 R50123:50125 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R50111:50111 LF.Basics <> ::nat_scope:x_'=?'_x not
 R50117:50121 LF.Basics <> ::nat_scope:x_'=?'_x not
 R50113:50115 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R50112:50112 LF.Basics <> n var
+R50112:50112 LF.Basics <> n:121 var
 R50126:50130 LF.Basics <> false constr
 prf 50320:50337 <> andb_commutative''
+binder 50350:50350 <> b:122
+binder 50352:50352 <> c:123
 R50363:50365 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R50355:50358 LF.Basics <> andb def
-R50362:50362 LF.Basics <> c var
-R50360:50360 LF.Basics <> b var
+R50362:50362 LF.Basics <> c:123 var
+R50360:50360 LF.Basics <> b:122 var
 R50366:50369 LF.Basics <> andb def
-R50373:50373 LF.Basics <> b var
-R50371:50371 LF.Basics <> c var
+R50373:50373 LF.Basics <> b:122 var
+R50371:50371 LF.Basics <> c:123 var
 prf 50549:50564 <> zero_nbeq_plus_1
 R50579:50581 Coq.Init.Datatypes <> nat ind
+binder 50575:50575 <> n:124
 R50598:50600 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R50587:50591 LF.Basics <> ::nat_scope:x_'=?'_x not
 R50597:50597 LF.Basics <> ::nat_scope:x_'=?'_x not
 R50593:50595 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R50592:50592 LF.Basics <> n var
+R50592:50592 LF.Basics <> n:124 var
 R50601:50605 LF.Basics <> false constr
 R51137:51140 Coq.Init.Peano <> plus syndef
 not 51125:51125 <> ::nat_scope:x_'+'_x
@@ -745,50 +797,58 @@ R51261:51264 Coq.Init.Peano <> mult syndef
 not 51249:51249 <> ::nat_scope:x_'*'_x
 def 53103:53107 <> plus'
 R53114:53116 Coq.Init.Datatypes <> nat ind
+binder 53110:53110 <> n:125
 R53124:53126 Coq.Init.Datatypes <> nat ind
+binder 53120:53120 <> m:126
 R53131:53133 Coq.Init.Datatypes <> nat ind
-R53146:53146 LF.Basics <> n var
+R53146:53146 LF.Basics <> n:125 var
 R53157:53157 Coq.Init.Datatypes <> O constr
-R53162:53162 LF.Basics <> m var
+R53162:53162 LF.Basics <> m:126 var
 R53168:53168 Coq.Init.Datatypes <> S constr
 R53176:53176 Coq.Init.Datatypes <> S constr
-R53179:53183 LF.Basics <> plus' def
-R53188:53188 LF.Basics <> m var
+R53179:53183 LF.Basics <> plus':127 def
+R53188:53188 LF.Basics <> m:126 var
 prf 54762:54786 <> identity_fn_applied_twice
 R54808:54811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R54812:54815 LF.Basics <> bool ind
 R54804:54807 LF.Basics <> bool ind
+binder 54800:54800 <> f:129
 R54821:54821 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R54848:54854 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R54867:54870 LF.Basics <> bool ind
+binder 54863:54863 <> b:130
 R54881:54883 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R54874:54874 LF.Basics <> f var
-R54877:54877 LF.Basics <> f var
-R54879:54879 LF.Basics <> b var
-R54884:54884 LF.Basics <> b var
+R54874:54874 LF.Basics <> f:129 var
+R54877:54877 LF.Basics <> f:129 var
+R54879:54879 LF.Basics <> b:130 var
+R54884:54884 LF.Basics <> b:130 var
 R54834:54837 LF.Basics <> bool ind
+binder 54830:54830 <> x:131
 R54844:54846 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R54841:54841 LF.Basics <> f var
-R54843:54843 LF.Basics <> x var
-R54847:54847 LF.Basics <> x var
+R54841:54841 LF.Basics <> f:129 var
+R54843:54843 LF.Basics <> x:131 var
+R54847:54847 LF.Basics <> x:131 var
 prf 55246:55270 <> negation_fn_applied_twice
 R55292:55295 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R55296:55299 LF.Basics <> bool ind
 R55288:55291 LF.Basics <> bool ind
+binder 55284:55284 <> f:132
 R55305:55305 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R55337:55343 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R55356:55359 LF.Basics <> bool ind
+binder 55352:55352 <> b:133
 R55370:55372 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R55363:55363 LF.Basics <> f var
-R55366:55366 LF.Basics <> f var
-R55368:55368 LF.Basics <> b var
-R55373:55373 LF.Basics <> b var
+R55363:55363 LF.Basics <> f:132 var
+R55366:55366 LF.Basics <> f:132 var
+R55368:55368 LF.Basics <> b:133 var
+R55373:55373 LF.Basics <> b:133 var
 R55318:55321 LF.Basics <> bool ind
+binder 55314:55314 <> x:134
 R55328:55330 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R55325:55325 LF.Basics <> f var
-R55327:55327 LF.Basics <> x var
+R55325:55325 LF.Basics <> f:132 var
+R55327:55327 LF.Basics <> x:134 var
 R55331:55334 LF.Basics <> negb def
-R55336:55336 LF.Basics <> x var
+R55336:55336 LF.Basics <> x:134 var
 R55444:55458 LF.Basics <> negb_involutive thm
 R55444:55458 LF.Basics <> negb_involutive thm
 R55444:55458 LF.Basics <> negb_involutive thm
@@ -800,31 +860,33 @@ R55592:55597 Coq.Strings.String <> string ind
 R55603:55606 Coq.Init.Datatypes <> None constr
 prf 55978:55988 <> andb_eq_orb
 R56008:56011 LF.Basics <> bool ind
+binder 56002:56002 <> b:135
+binder 56004:56004 <> c:136
 R56017:56017 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R56036:56042 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R56044:56046 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R56043:56043 LF.Basics <> b var
-R56047:56047 LF.Basics <> c var
+R56043:56043 LF.Basics <> b:135 var
+R56047:56047 LF.Basics <> c:136 var
 R56026:56028 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R56018:56021 LF.Basics <> andb def
-R56025:56025 LF.Basics <> c var
-R56023:56023 LF.Basics <> b var
+R56025:56025 LF.Basics <> c:136 var
+R56023:56023 LF.Basics <> b:135 var
 R56029:56031 LF.Basics <> orb def
-R56035:56035 LF.Basics <> c var
-R56033:56033 LF.Basics <> b var
+R56035:56035 LF.Basics <> c:136 var
+R56033:56033 LF.Basics <> b:135 var
 ind 57564:57566 <> bin
 constr 57582:57582 <> Z
 constr 57588:57589 <> B0
 constr 57605:57606 <> B1
-R57583:57583 LF.Basics <> bin ind
-R57596:57598 LF.Basics <> bin ind
-R57600:57600 LF.Basics <> bin ind
-R57613:57615 LF.Basics <> bin ind
-R57617:57617 LF.Basics <> bin ind
+R57596:57598 LF.Basics <> bin:137 ind
+binder 57592:57592 <> n:139
+R57613:57615 LF.Basics <> bin:137 ind
+binder 57609:57609 <> n:140
 def 57800:57803 <> incr
 R57808:57810 LF.Basics <> bin ind
+binder 57806:57806 <> m:141
 R57815:57817 LF.Basics <> bin ind
-R57830:57830 LF.Basics <> m var
+R57830:57830 LF.Basics <> m:141 var
 R57843:57843 LF.Basics <> Z constr
 R57848:57849 LF.Basics <> B1 constr
 R57851:57851 LF.Basics <> Z constr
@@ -832,22 +894,23 @@ R57859:57860 LF.Basics <> B0 constr
 R57867:57868 LF.Basics <> B1 constr
 R57878:57879 LF.Basics <> B1 constr
 R57886:57887 LF.Basics <> B0 constr
-R57890:57893 LF.Basics <> incr def
+R57890:57893 LF.Basics <> incr:142 def
 def 57921:57930 <> bin_to_nat
 R57935:57937 LF.Basics <> bin ind
+binder 57933:57933 <> m:144
 R57942:57944 Coq.Init.Datatypes <> nat ind
-R57957:57957 LF.Basics <> m var
+R57957:57957 LF.Basics <> m:144 var
 R57970:57970 LF.Basics <> Z constr
 R57975:57975 Coq.Init.Datatypes <> O constr
 R57983:57984 LF.Basics <> B0 constr
 R57992:57995 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
 R58008:58008 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
-R57996:58005 LF.Basics <> bin_to_nat def
+R57996:58005 LF.Basics <> bin_to_nat:145 def
 R58016:58017 LF.Basics <> B1 constr
 R58042:58044 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
 R58025:58028 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
 R58041:58041 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
-R58029:58038 LF.Basics <> bin_to_nat def
+R58029:58038 LF.Basics <> bin_to_nat:145 def
 def 58369:58382 <> test_bin_incr1
 R58386:58386 Coq.Init.Logic <> ::type_scope:x_'='_x not
 R58398:58401 Coq.Init.Logic <> ::type_scope:x_'='_x not

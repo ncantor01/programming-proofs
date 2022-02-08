@@ -283,7 +283,10 @@ Qed.
 Theorem ev_double : forall n,
   ev (double n).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  induction n.
+  - apply ev_0.
+  - simpl. apply ev_SS. apply IHn. Qed.
 (** [] *)
 
 (* ################################################################# *)
@@ -460,7 +463,10 @@ Proof.
 Theorem SSSSev__even : forall n,
   ev (S (S (S (S n)))) -> ev n.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. 
+  inversion H.
+  inversion H1.
+  apply H3. Qed.
 (** [] *)
 
 (** **** Exercise: 1 star, standard (ev5_nonsense)
@@ -470,7 +476,9 @@ Proof.
 Theorem ev5_nonsense :
   ev 5 -> 2 + 2 = 9.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  inversion H.
+  simpl. inversion H1. inversion H3. Qed.
 (** [] *)
 
 (** The [inversion] tactic does quite a bit of work. For
@@ -634,7 +642,12 @@ Qed.
 (** **** Exercise: 2 stars, standard (ev_sum) *)
 Theorem ev_sum : forall n m, ev n -> ev m -> ev (n + m).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  induction H.
+  - apply H0.
+  - destruct H0.
+    + simpl. apply ev_SS. apply IHev.
+    + simpl. apply ev_SS. apply IHev. Qed .   
 (** [] *)
 
 (** **** Exercise: 4 stars, advanced (ev'_ev)
@@ -656,6 +669,16 @@ Inductive ev' : nat -> Prop :=
 
 Theorem ev'_ev : forall n, ev' n <-> ev n.
 Proof.
+  intros.
+  split.
+  - intros. destruct H eqn:H1.
+    + apply ev_0.
+    + apply ev_SS. apply ev_0.
+    + apply ev_sum.
+      { inversion e1.
+        - apply ev_0.
+        - apply ev_SS. apply ev_0.
+        - rewrite H0.  } 
  (* FILL IN HERE *) Admitted.
 (** [] *)
 
@@ -677,6 +700,8 @@ Proof.
 Theorem ev_plus_plus : forall n m p,
   ev (n+m) -> ev (n+p) -> ev (m+p).
 Proof.
+  intros.
+
   (* FILL IN HERE *) Admitted.
 (** [] *)
 
@@ -686,7 +711,13 @@ Proof.
 Theorem perm3_symm : forall X (l1 l2 : list X),
     Perm3 l1 l2 -> Perm3 l2 l1.
  Proof.
-  (* FILL IN HERE *) Admitted.
+   intros.
+   induction H.
+   - apply perm3_swap12.
+   - apply perm3_swap23.
+   - apply perm3_trans with l2.
+    + apply IHPerm3_2.
+    + apply IHPerm3_1. Qed. 
 (** [] *)
 
 (* ################################################################# *)
@@ -763,6 +794,8 @@ End Playground.
     between every pair of natural numbers. *)
 
 (* FILL IN HERE
+Inductive total : nat -> nat -> Prop :=
+  | all  (n : nat) (m : nat) : total n m.
 
     [] *)
 
@@ -795,6 +828,12 @@ End Playground.
 
 Lemma le_trans : forall m n o, m <= n -> n <= o -> m <= o.
 Proof.
+  intros. 
+  induction H.
+  - apply H0.
+  - apply le_S in H0. apply IHle. 
+
+   
   (* FILL IN HERE *) Admitted.
 
 Theorem O_le_n : forall n,
@@ -1137,7 +1176,14 @@ Qed.
 (** **** Exercise: 2 stars, standard (reflect_iff) *)
 Theorem reflect_iff : forall P b, reflect P b -> (P <-> b = true).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros.
+  split.
+  - intros. inversion H.
+    + reflexivity.
+    + apply H1 in H0. inversion H0.
+  - intros. destruct H.
+    + apply H.
+    + discriminate H0. Qed.
 (** [] *)
 
 (** We can think of [reflect] as a kind of variant of the usual "if
@@ -1196,7 +1242,19 @@ Theorem eqbP_practice : forall n l,
   count n l = 0 -> ~(In n l).
 Proof.
   intros n l Hcount. induction l as [| m l' IHl'].
-  (* FILL IN HERE *) Admitted.
+  - unfold not. intros. apply H.
+  - unfold not. intros. simpl in Hcount. simpl in H. destruct H.
+    + symmetry in H. destruct (n =? m) eqn:H1.
+      { discriminate Hcount. }
+      { destruct (eqbP n m) as [H2 | H2] in H1.
+        - discriminate.
+        - unfold not in H2. apply H2 in H. apply H. }
+    + unfold not in IHl'. apply IHl'.
+      { destruct (n =? m) in Hcount.
+        - discriminate Hcount.
+        - apply Hcount. }
+      { apply H. } Qed.
+  
 (** [] *)
 
 (** This small example shows reflection giving us a small gain in
@@ -1229,7 +1287,8 @@ Proof.
     [nostutter]. *)
 
 Inductive nostutter {X:Type} : list X -> Prop :=
- (* FILL IN HERE *)
+ | nostutter_nil (l : list X) : nostutter nil.
+ | nostutter_some (x y : X)(l : list X)
 .
 (** Make sure each of these tests succeeds, but feel free to change
     the suggested proof (in comments) if the given one doesn't work
